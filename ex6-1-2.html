@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>박스 레이아웃 만들기</title>
+    <title>박스 레이아웃 예제 혼자 만들기</title>
     <style>
         html,
         body {
@@ -16,7 +16,7 @@
         }
 
         header {
-            width: 310px;
+            width: 420px;
             height: 50px;
             background-color: aqua;
             border-radius: 10px;
@@ -25,29 +25,50 @@
 
         main {
             display: flex;
+            margin-bottom: 10px;
         }
 
-        nav {
+        nav1 {
             width: 100px;
-            height: 200px;
+            height: 410px;
             background-color: burlywood;
             border-radius: 10px;
             margin-right: 10px;
         }
 
         article {
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+        }
+
+        article1 {
             width: 200px;
             height: 200px;
+            background-color: greenyellow;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        article2 {
+            width: 200px;
+            height: 200px;
+            background-color: violet;
+            border-radius: 10px;
+        }
+
+        nav2 {
+            width: 100px;
+            height: 410px;
             background-color: red;
             border-radius: 10px;
         }
 
         footer {
-            width: 310px;
+            width: 420px;
             height: 50px;
-            background-color: darkgreen;
+            background-color: blue;
             border-radius: 10px;
-            margin-top: 10px;
         }
     </style>
 </head>
@@ -56,8 +77,12 @@
     <div class="container">
         <header></header>
         <main>
-            <nav></nav>
-            <article></article>
+            <nav1></nav1>
+            <article>
+                <article1></article1>
+                <article2></article2>
+            </article>
+            <nav2></nav2>
         </main>
         <footer></footer>
     </div>

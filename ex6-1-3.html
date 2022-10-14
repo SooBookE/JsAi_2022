@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>박스 레이아웃 예제 혼자 만들기</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+/*            width: 100%;*/
+        }
+
+        body {
+            margin-top: 0;
+            margin-left: 0;
+            display: flex;
+            justify-content: stretch;
+/*            align-items:stretch;*/
+
+        }
+
+        header {
+            height: 50px;
+            background-color: aqua;
+        }
+
+        main {
+            display: flex;
+            justify-content: stretch;
+        }
+
+        nav1 {
+            flex-grow: 0;
+            width: 100px;
+            height: 400px;
+            background-color: burlywood;
+        }
+
+        article {
+            flex-grow: 1;
+            display: flex;
+            align-items: column;
+        }
+
+        article1 {
+            height: 200px;
+            width: 100px;
+            background-color: greenyellow;
+        }
+
+        article2 {
+            height: 200px;
+            background-color: violet;
+        }
+
+        nav2 {
+            flex-grow: 0;
+            width: 100px;
+            height: 400px;
+            background-color: red;
+        }
+
+        footer {
+            height: 50px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header></header>
+        <main>
+            <nav1></nav1>
+            <article>
+                <article1></article1>
+                <article2></article2>
+            </article>
+            <nav2></nav2>
+        </main>
+        <footer></footer>
+    </div>
+</body></html>
