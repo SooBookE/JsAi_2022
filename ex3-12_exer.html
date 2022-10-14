@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델 연습</title>
+    <style>
+        div {
+            background-color: violet;
+
+            padding: 40px;
+
+            border: 15px double black;
+
+            margin: 40px;
+        }
+
+        .div1 {
+            background-clip: padding-box;
+            /*            선택한 영역까지만 컬러를 적용하는 문법*/
+        }
+
+        .div2 {
+            background-clip: content-box;
+            /*            선택한 영역까지만 컬러를 적용한느 문법*/
+        }
+    </style>
+</head>
+
+<body>
+    <div>It's impossible not only starting good but also keeping it firm!!</div>
+    <div class="div1">It's impossible not only starting good but also keeping it firm!!</div>
+    <div class="div2">It's impossible not only starting good but also keeping it firm!!</div>
+
+</body></html>

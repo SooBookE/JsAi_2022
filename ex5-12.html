@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>키프레임</title>
+    <style>
+        div {
+            background-color: rgb(146, 146, 146);
+            height: 200px;
+            width: 200px;
+            margin: 50px;
+            animation: mymove 0.01ms infinite;
+        }
+
+/*
+        @keyframes mymove {
+            0% {
+                transform: rotate(90deg);
+            }
+
+            25% {
+                transform: rotate(180deg);
+            }
+
+            75% {
+                transform: rotate(270deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+*/
+
+            @keyframes mymove {
+                from {
+                    transform: rotate(90deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+/*                from-to나 백분율로 키프레임을 설정할 수 있다.*/
+
+            }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body></html>

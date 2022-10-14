@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>복합선택자</title>
+    <style>
+        span {
+            text-align: justify;
+/*            justify 는 균등하게 분포시킨다*/
+        }
+
+        div p {
+            background-color: aqua;
+        }
+
+        div .c1 {
+            background-color: crimson;
+        }
+
+        p.cl,
+        #p1 {
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+
+
+<body>
+    <span>Heading line test</span>
+    <div class="c1">
+        <p>child 1</p>
+        <p>child 2</p>
+        <div>
+            <p class="c1">grandchild</p>
+        </div>
+    </div>
+    <p id="p1">neighborhood child</p>
+</body></html>

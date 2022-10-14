@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>테이블(표) 그리기</title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>시간</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+
+        <tr>
+            <td>아침</td>
+            <td>국밥</td>
+            <td>비빔밥</td>
+            <td>짜장면</td>
+            <td>쫄면</td>
+            <td>볶음밥</td>
+        </tr>
+
+        <tr>
+            <td>점심</td>
+            <td>국밥</td>
+            <td>비빔밥</td>
+            <td>짜장면</td>
+            <td>쫄면</td>
+            <td>볶음밥</td>
+        </tr>
+    </table><br><br><br><br>
+
+    <table style="width:50%" border="35">
+        <h2>
+            <p>연습 문제</p>
+        </h2>
+        <tr style="background-color: saddlebrown">
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr style="background-color: fuchsia">
+            <td>아침</td>
+            <td>라면</td>
+            <td>국밥</td>
+            <td>국수</td>
+            <td>국물</td>
+            <td>물면</td>
+        </tr>
+        <tr>
+            <td>점심</td>
+            <td>맵면</td>
+            <td>국수</td>
+            <td>국물</td>
+            <td>국밥</td>
+            <td>라면</td>
+        </tr>
+        <tr>
+            <td>저녁</td>
+            <td>쫄면</td>
+            <td>국밥</td>
+            <td>라면</td>
+            <td>국물</td>
+            <td>커피</td>
+        </tr>
+
+    </table><br><br><br>
+
+    <!--    만약 수요일만 합치는 표를 작성하고 싶다면-->
+    <table style="width:200">
+        <tr style="background-color: saddlebrown">
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr style="background-color: fuchsia">
+            <td>아침</td>
+            <td>라면</td>
+            <td rowspan="3">국밥</td>
+            <td>국수</td>
+            <td>국물</td>
+            <td>물면</td>
+        </tr>
+        <tr>
+            <td>점심</td>
+            <td>맵면</td>
+            <td colspan="2">국수</td>
+            <!--rowspan으로 인해 주석처리 <td>국물</td>-->
+            <!--colspan으로 인해 주석처리 <td>국밥</td>-->
+            <td>라면</td>
+        </tr>
+        <tr>
+            <td>저녁</td>
+            <td>쫄면</td>
+            <td>국밥</td>
+            <!--rowspan으로 인해 주석처리 <td>라면</td>-->
+            <td>국물</td>
+            <td>커피</td>
+        </tr>
+    </table><br><br><br><br>
+
+    <h2>
+        <p>연습 문제2</p>
+    </h2>
+    <table border="1">
+        <tr>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+            <th>토</th>
+            <th>일</th>
+        </tr>
+        <tr>
+            <td colspan="2">쌀밥</td>
+            <td colspan="3">잡곡밥</td>
+            <td>스파게티</td>
+            <td>짜장면</td>
+        </tr>
+        <tr>
+            <td>불고기</td>
+            <td>떡갈비</td>
+            <td>미니돈까스</td>
+            <td>오징어볶음</td>
+            <td>제육볶음</td>
+            <td rowspan="2">피클</td>
+            <td>단무지</td>
+        </tr>
+        <tr>
+            <td>배추김치</td>
+            <td>깍두기</td>
+            <td>미소된장국</td>
+            <td>맛다시</td>
+            <td>슈넬치킨</td>
+            <td>빅팜</td>
+        </tr>
+    </table>
+
+
+    <!--    3차시 오프닝 복습-->
+    <table border="1">
+        <tr style="background-color: aquamarine">
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr>
+            <td>국밥</td>
+            <td>국밥</td>
+            <td rowspan="3">국</td>
+            <td>국밥</td>
+            <td>국밥</td>
+        </tr>
+        <tr>
+            <td>국밥</td>
+            <td>국밥</td>
+            <td colspan="2">국밥</td>
+        </tr>
+        <tr>
+            <td>국밥</td>
+            <td>국밥</td>
+            <td>국밥</td>
+            <td>국밥</td>
+        </tr>
+    </table>
+
+    <a href="ex1_home.html"><img src="/img/unstable.jfif" alt="불-편"></a>
+
+</body>
+
+</html>

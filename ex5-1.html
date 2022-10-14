@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>구조적 선택자1</title>
+    <style>
+        span p:first-child {
+            color: red;
+            padding: 5px;
+            background-color: beige;
+        }
+
+        /*        first-child는 첫째 자식만 선택. last-child는 마지막 자식만 선택*/
+
+        span p:last-child {
+            color: brown;
+            padding: 5px;
+            background-color: beige;
+        }
+
+        p:nth-child(2) {
+            color: white;
+            padding: 5px;
+            background-color: darkviolet;
+        }
+        
+        p:nth-of-type(1) {
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>첫 번째 입니다.</p>
+        <p>두 번째 입니다.</p>
+        <p>세 번째 입니다.</p>
+    </div>
+    <span>
+        <p>네 번째 입니다.</p>
+        <p>다섯 번째 입니다.</p>
+        <p>여섯 번째 입니다.</p>
+    </span>
+</body></html>

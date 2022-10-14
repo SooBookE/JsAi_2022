@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가상 선택자4</title>
+    <style>
+        p:only-of-type {
+            color: red;
+            background-color: yellow;
+        }
+
+        /*        p 중에서 유일한 p 태그만 조정*/
+        span :only-of-type {
+            color: red;
+            background-color: yellow;
+        }
+
+        /*        span 아래에 있는 요소 중에 유일한 것들만 조정*/
+    </style>
+</head>
+
+<body>
+    <span>
+        <div>난 div 태그의 첫 번째야</div>
+        <p>난 유일한 p 태그야</p>
+        <div>난 div 태그의 두 번째야</div>
+        <div>난 div 태그의 세 번쨰야
+            <i>난 유일한 i 태그야</i>
+            <em>난 em 태그의 첫 번째야</em>
+            <em>난 em 태그의 두 번쨰야</em>
+        </div>
+    </span>
+</body></html>

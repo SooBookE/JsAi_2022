@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>키프레임 예제 연습</title>
+    <style>
+        div {
+            background-color: green;
+            height: 200px;
+            width: 100px;
+            margin: 50px;
+            animation: trans 1s infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes trans {
+            from {
+                transform: translate(0px, -0px);
+            }
+
+            to {
+                transform: translate(400px, 400px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>Animation</div>
+</body></html>

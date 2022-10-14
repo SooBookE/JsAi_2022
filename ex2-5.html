@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form 태그</title>
+</head>
+
+<body>
+    <form action="https://www.naver.com">
+        ID
+        <input type="text">
+        Password
+        <input type="text">
+        <input type="submit">
+    </form>
+
+    <form action="https://www.naver.com">
+        ID
+        <input type="text">
+        Password
+        <input type="password">
+        <input type="submit">
+    </form>
+
+    <form action="https://www.naver.com">
+        <label for="idtext">ID</label>
+        <input type="text" id="idtext">
+        <label for="passwd">Password</label>
+        <input type="password" id="passwd">
+        <input type="submit">
+    </form>
+
+    <h2>가입양식</h2>
+    <form action="#">
+        <label for="name">성함 : </label>
+        <input type="text" id="name" pattern="[가-힣]{3}|[가-힣]{2}|[가-힣]|[가-힣]{4}"><br><br>
+
+        <label for="num">전화번호 : </label>
+        <input type="tel" pattern="[0-9]{10}" id="num"><br><br>
+
+        <label for="e_add">E-mail 주소 : </label>
+        <input type="email" id="e_add" pattern="[\S]{1,10}\@[a-zA-Z]{1,5}\.[a-zA-Z]{2,3}"><br><br>
+
+        <label for="add">주소 : </label>
+        <input type="text" id="add"><br><br>
+
+        <label for="word">하고싶은 말 : </label><br><br>
+        <textarea name="" id="word" cols="30" rows="10"></textarea><br><br>
+
+        <label for="date">제출날짜 : </label>
+        <input type="date" id="date"><br><br>
+
+        <input type="submit">
+
+
+    </form>
+
+    <div>
+        <form action="#">
+            <h2>
+                <p>1. 주민번호 입력기</p>
+            </h2>
+            <label for="num">주민번호 : </label>
+            <input type="tel" id="num" pattern="[0-9]{6}">-<input type="text" id="num" pattern="[1-4][0-9]{6}">
+            <p><input type="submit"></p>
+        </form>
+    </div>
+
+
+    <div>
+        <form action="#">
+            <h2>
+                <p>2. 비밀번호 제한기</p>
+            </h2>
+            <label for="pass">비밀번호 : </label>
+            <input type="password" id="pass" pattern="[\S]{10,}">
+            <p><input type="submit"></p>
+        </form>
+    </div>
+
+
+    <div>
+        <form action="#">
+            <h2>
+                <p>3. 대문자로만</p>
+            </h2>
+            <label for="big">대문자 : </label>
+            <input type="text" id="big" pattern="[A-Z]{1,}">
+            <p><input type="submit"></p>
+        </form>
+    </div>
+
+    <div>
+        <form action="#">
+            <h2>
+                <p>My Form( 책 예제 )</p>
+            </h2>
+            <p><img src="/img/aa.jfif" alt="아아"></p>
+
+            <label for="name">Username : </label>
+            <input type="text" id="name"><br>
+
+            <label for="pass">Password : </label>
+            <input type="password" id="pass"><br>
+
+            <p><input type="checkbox" id="check">
+                <label for="check">I'm not a robot.</label>
+            </p>
+            <p><input type="submit"></p>
+        </form>
+    </div>
+    <a href="ex1_home.html"><img src="/img/unstable.jfif" alt="불-편"></a>
+
+
+</body></html>

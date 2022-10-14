@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>위치지정</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /*            body 전체가 flex로 정렬 되어있으니 자식 안에서도 flex를 사용 가능하다. 이를 이용해 다른 정렬 사용 없이 flex로 컨텐츠의 위치 지정이 가능하다.*/
+        }
+
+        #second {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
+</body></html>

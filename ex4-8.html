@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>플렉스예제2</title>
+    <style>
+        .container {
+            display: flex;
+            background: #ccc;
+            width: 500px;
+            height: 300px;
+            flex-wrap: wrap;
+        }
+
+        .container div {
+            background-color: darkblue;
+            color: #fff;
+            flex: 1 1 100px;
+            /*            div의 기본 너비를 100으로 지정했지만 컨테이너와 랩의 사이즈 제한 때문에 다 들어가지 못한 div들이 줄 바꿈으로 우겨 들어감*/
+            font-size: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>child1</div>
+        <div>child2</div>
+        <div>child3</div>
+        <div>child4</div>
+        <div>child5</div>
+        <div>child6</div>
+        <div>child7</div>
+        <div>child8</div>
+    </div>
+</body></html>

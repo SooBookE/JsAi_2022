@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이동</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+        }
+
+        [class^="tran"] {
+            border: 4px solid tomato;
+            margin: 50px;
+        }
+
+        .container div {
+            background-color: aqua;
+            border-radius: 5px;
+            transition: 1s ease-in-out;
+        }
+
+        .transformed1:hover {
+            background-color: aquamarine;
+            transform: translateX(70px);
+        }
+
+        .transformed2:hover {
+            background-color: bisque;
+            transform: translateY(70px);
+        }
+
+        .transformed3:hover {
+            background-color: red;
+            transform: translate(15px, -40px);
+        }
+
+        .transformed4:hover {
+            background-color: blueviolet;
+            transform: translate(12px, 50%);
+        }
+
+        /*
+[class*="tra"]:hover {
+background-color: crimson;
+transform: rotate(90deg) scale(15) translate(50px, 70%)
+동시 적용도 가능하다.
+}
+*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="transformed1">transformed1</div>
+        <div class="transformed2">transformed2</div>
+        <div class="transformed3">transformed3</div>
+        <div class="transformed4">transformed4</div>
+    </div>
+</body></html>

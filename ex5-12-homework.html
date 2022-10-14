@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>키프레임 예제 숙제</title>
+    <style>
+        .ball {
+            background-color: aqua;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            text-align: center;
+        }
+
+        .slope {
+            width: 0px;
+            height: 0px;
+            transform: translateY(100px);
+            border-bottom: 100px solid burlywood;
+            border-left: 100px solid burlywood;
+            border-right: 100px solid transparent;
+            border-top: 100px solid transparent;
+            /*            기본적으로 삼각형은 도형이 없기 때문에 width와 height를 죽이고 border 라인을 이용해 만들어 줘야 한다. 4방향을 모두 solid로 고정하고, border-right와 top을 transparent로 투명처리 했다.*/
+        }
+
+        input:checked+div {
+            animation: ball 3s infinite ease-in;
+        }
+
+        /*        checkbox 사용 예제. input이 체크되면 바로 옆의 div에 동작을 준다는 문법.*/
+
+        @keyframes ball {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(100px);
+            }
+
+            75% {
+                transform: translate(200px, 300px) rotate(270deg);
+                /*                border를 각각 100px씩 주었기 때문에 총 높이, 넓이는 200px, y축은 내려온 높이 100px까지 포함해 300px 이동했다.*/
+            }
+
+            100% {
+                transform: translate(500px, 300px) rotate(500deg);
+            }
+
+            /*            rotate를 추가해 구르는 효과를 더 주었다.*/
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox">
+    <div class="ball">ㅇ</div>
+    <div class="slope"></div>
+</body></html>
