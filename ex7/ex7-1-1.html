@@ -42,6 +42,15 @@
             position: absolute;
             width: 100%;
             height: 10px;
+            transition: 0.5x;
+            background: white;
+        }
+        .hamburger:before,
+        .hamburger:after {
+            content: none;
+        }
+        .hamburger {
+            top: 50%;
         }
     </style>
 </head>
@@ -50,7 +59,7 @@
     <span class="hamburger-title">My hamburger</span>
     <label for="">
         <div class="hamburger-container">
-            <input type="text" class="toggle">
+            <input type="checkbox" class="toggle">
             <div class="hamburger"></div>
         </div>
     </label>
