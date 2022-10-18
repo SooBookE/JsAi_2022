@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>햄버거 풀이</title>
+    <style>
+        :root {
+            --body-bg: white;
+            --hamburger-bg: #fff;
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            background-color: var(--body-bg);
+            display: flex;
+            flex-direction: column;
+            /*            위에 것 생략 준비*/
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hamburger-title {
+            color: red;
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+
+        .hamburger-container {
+            display: inline-block;
+            position: relative;
+            /*            자신을 기준으로 한다.*/
+            width: 100px;
+            height: 100px;
+            background-color: var(--hamburger-bg);
+        }
+
+        .hamburger,
+        .hamburger::before,
+        .hamburger::after {
+            position: absolute;
+            /*            위가 relative이므로 부모의 위치를 따름*/
+            width: 100%;
+            height: 10px;
+            transition: 0.5s;
+            background: red;
+        }
+
+        .hamburger::after,
+        .hamburger::before {
+            content: ""
+        }
+
+        .hamburger {
+            top: 50%;
+        }
+
+        .hamburger::before {
+            top: -30px;
+        }
+
+        .hamburger::after {
+            top: 30px;
+        }
+
+        .toggle:checked~.hamburger::before {
+            top: 0;
+            transform: rotate(135deg);
+        }
+
+        .toggle:checked~.hamburger::after {
+            top: 0;
+            transform: rotate(225deg);
+        }
+
+        .toggle:checked~.hamburger {
+            background: var(--hamburger-bg);
+        }
+
+        .toggle {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="hamburger-title">Myhamburger</span>
+    <label>
+        <div class="hamburger-container">
+            <input type="text" class="toggle">
+            <div class="hamburger"></div>
+        </div>
+
+    </label>
+</body></html>

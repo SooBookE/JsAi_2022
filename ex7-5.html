@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 맛보기</title>
+    <link rel="stylesheet" href="style.css">
+    <!--    <script src="jstest.js"></script>-->
+</head>
+
+<body>
+    <label for="btn">
+        <button type="button" id="btn" onclick="alert('반가워요')">1. 확인을 해주세요.(alert)</button></label>
+    <!--    "" 안에 '' 아니면 '' 안에 "" 해주어야 중복 인식 안 함-->
+    <input type="button" value="2. 이름을 적어주세요.(prompt)" onclick="prompt('이름을 적어주소~')">
+    <button id="btn3" onclick="(function(){confirm('혼자 있고 싶어요.'); console.log('혼자 있고 싶다네요.')}())">3. 혼자 있고 싶어요.(confirm)</button>
+    <button id="btn3" onclick="alert(1234+5678)">4. 1234+5678(계산)</button>
+    <!--    자바, c언어는 문자/숫자를 지정해놓아야 하고 고속동작함. 일반적인 기계제품에 코드 넣으면 즉시 동작. js나 파이썬은 컴파일 유연하면서 좀 느림. js 최대의 장점은 숫자에는 ''나 "" 안 넣어도 분류함.-->
+    <!--    알림 띄우는 거 시험 나오니까 연습 숙달-->
+    <div>
+        <script>
+            document.write(Date());
+            //        최초 켜진 시간 작성
+        </script>
+    </div>
+</body></html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 연습3</title>
+    <style>
+        body {
+            background-color: pink;
+            padding-top: 8rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile {
+            width: 8rem;
+            height: 8rem;
+            background-image: url(/img/unstable.jfif);
+            background-size: 120px;
+            border-radius: 50%;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+            /*            rgba에서 제일 뒷 내용은 opcity와 비슷한데, rgba에서는 0.3이라면 opacity에서는 0.7이어야 함*/
+            /*            cubic-beizer (x1,y1,x2,y2)  ..?*/
+            /*            디테일한 ease 같은 녀석*/
+            transform: translateY(50%);
+        }
+
+        .profile:hover {
+            transform: translateY(50%) scale(1.3);
+        }
+
+        .banner {
+            background-image: url(/img/menu.jpg);
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #fff;
+            max-width: 360px;
+            overflow: hidden;
+            border-radius: 2rem;
+            box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.5);
+        }
+
+        .name {
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .follow-btn {
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .follow-btn button {
+            font-size: medium;
+            font-weight: bold;
+            background-color: yellow;
+            border: none;
+            padding: 1rem;
+            outline: none;
+            border-radius: 50px;
+        }
+
+        .follow-btn button:hover {
+            background-color: #efb10a;
+            transform: scale(1.1);
+        }
+
+        .desc {
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!--    div.card>div.banner+h2.name+div.follow-btn+div.desc-->
+<!--
+    <div class="container container1"
+    <div class="container container2"
+    <div class="container container3"
+    이런식으로 띄워쓰기로 클래스 여러개를 설정할 수 있다.
+-->
+    <div class="card">
+        <div class="banner">
+            <div class="profile"></div>
+        </div>
+        <h2 class="name">KSH</h2>
+        <div class="follow-btn">
+            <button>Follow</button>
+        </div>
+        <div class="desc">책 구매해주셔서 감사합니다. 노력하는 당신에게 축복을 그리고 더 나은 여러분이 되시길 기원합니다!</div>
+    </div>
+</body></html>

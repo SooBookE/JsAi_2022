@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가상선택자(before, after)</title>
+    <style>
+        /*        우선 순위는 중첩이 가능하고, 우선 순위로 인해 의도대로 실행 안 될 수 있으니 세세히 확인해볼 것*/
+        p:not(:last-child):before {
+            content: "★ "
+        }
+
+        p:first-child {
+            color: blue;
+        }
+
+        p:nth-child(2) {
+            background-color: yellow;
+            display: inline;
+        }
+
+        p:nth-child(3):after {
+            content: " ☆";
+        }
+
+        p:nth-last-child(2):after {
+            content: " 메로나";
+        }
+
+        p:last-child:after {
+            content: " 감사합니다";
+        }
+
+        /*        child 먼저 쓰고 뒤에 after나 before 써야 인식 됨.*/
+    </style>
+</head>
+
+<body>
+    <!--    div>p{임시$}*5-->
+    <div>
+        <p>나의 사랑</p>
+        <p>나의 가족</p>
+        <p>행복 미래</p>
+        <p>올 때</p>
+        <p>이제 끝</p>
+    </div>
+</body></html>

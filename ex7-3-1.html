@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>프로필 카드 혼자 만들어보기</title>
+    <style>
+        html {
+            10px;
+        }
+
+        body {
+            padding-top: 4rem;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            max-width: 20rem;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.5);
+        }
+
+        .profile {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            background-image: url(/img/mococo.png);
+            background-size: 7.5rem;
+            border: solid 3px yellow;
+            transform: translateY(50%);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+        }
+
+        .profile:hover {
+            transform: scale(1.5) translateY(50%);
+        }
+
+
+        .banner {
+            background-image: url(img/banner.jfif);
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .name {
+            text-align: center;
+            padding-top: 4rem;
+        }
+
+        .follow-btn {
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .follow-btn button {
+            font-size: medium;
+            font-weight: bold;
+            background-color: aqua;
+            border: none;
+            padding: 0.5rem;
+            outline: none;
+            border-radius: 50px;
+        }
+
+        button:hover {
+            transform: scale(0.7);
+            background-color: aquamarine;
+        }
+
+        .desc {
+            padding: 1.2rem;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="banner">
+            <div class="profile"></div>
+        </div>
+        <h2 class="name">성이름</h2>
+        <div class="follow-btn">
+            <button>Follow</button>
+        </div>
+        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet velit sit nesciunt aliquam consequatur fugit, architecto suscipit ratione excepturi minima voluptate incidunt nam nemo minus pariatur, praesentium maiores cumque ad aut numquam, quibusdam! Voluptate consectetur aspernatur quos molestias dicta, doloremque. Molestiae quaerat non aliquam nihil sed ipsa, praesentium alias sit.</div>
+    </div>
+</body></html>
