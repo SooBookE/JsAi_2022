@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>스스로 카드</title>
+    <style>
+        html {
+            10px;
+        }
+
+        body {
+            background-color: deeppink;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .card {
+            max-width: 300px;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .banner {
+            background-image: url(img/banner.jfif);
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile {
+            width: 80px;
+            height: 80px;
+            background-image: url(img/mococo.png);
+            background-size: 80px;
+            transform: translateY(50%);
+            transition: transform 1s ease;
+        }
+
+        .profile:hover {
+            transform: translateY(50%) scale(1.2);
+        }
+
+        .name {
+            padding-top: 50px;
+            margin: 0px;
+        }
+
+        .follow-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 10px;
+        }
+
+        button {
+            background-color: darkorange;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            transition: transform 1s ease, background-color 2s ease;
+        }
+
+        button:hover {
+            transform: scale(0.8);
+            background-color: darkblue;
+        }
+
+        .desc {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="banner">
+            <div class="profile"></div>
+        </div>
+        <h2 class="name">성이름</h2>
+        <div class="follow-btn">
+            <button type="button">Follow</button>
+        </div>
+        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure possimus delectus, pariatur unde assumenda veritatis consectetur quibusdam voluptas explicabo laudantium vitae dolorem. Beatae reiciendis iusto praesentium ipsa tenetur, odio sit repudiandae ipsum dolor veniam libero hic nemo, ab deserunt ut aperiam repellendus nihil in, reprehenderit officiis. Modi alias repellat, ipsum praesentium amet aliquid vero odio dolor qui distinctio officiis impedit quo quidem molestias eos at quos. Dolor corrupti, ipsa error.</div>
+    </div>
+</body></html>

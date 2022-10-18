@@ -1,0 +1,6 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+
+body {
+    font-family: 'Hi Melody', cursive;
+}

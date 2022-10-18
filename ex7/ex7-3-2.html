@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>스스로 카드</title>
+    <style>
+        html {
+            10px;
+        }
+
+        body {
+            background-color: firebrick;
+            justify-content: center;
+            display: flex;
+            padding-top: 5rem;
+        }
+
+        .card {
+            max-width: 20rem;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+            box-shadow: 10px 5rem 7rem rgba(0, 0, 0, 0.8);
+        }
+
+        .banner {
+            background-image: url(img/banner.jfif);
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            background-image: url(/img/sorrow.jfif);
+            background-size: 8rem;
+            box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.2);
+            transform: translateY(50%);
+            transition: transform 1s ease, ;
+        }
+
+        .profile:hover {
+            transform: translateY(50%) scale(1.2);
+        }
+
+        .name {
+            text-align: center;
+            padding-top: 2rem;
+        }
+
+        .follow-btn {
+            padding: 0.3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        button {
+            background-color: blueviolet;
+            font-size: medium;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            padding: 7px;
+            transition: transform 1s ease-in-out, background-color 3s ease-in-out;
+
+        }
+
+        button:hover {
+            transform: scale(0.8);
+            background-color: fuchsia
+        }
+
+        .desc {
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="banner">
+            <div class="profile"></div>
+        </div>
+        <h2 class="name">성이름</h2>
+        <div class="follow-btn">
+            <button type="button">Follow</button>
+        </div>
+        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquid tenetur, consequuntur blanditiis expedita quae, voluptatibus rerum sit voluptate nostrum, consequatur nam deserunt, animi quas illum qui quisquam fugiat eaque temporibus iusto! Ea porro consequatur aliquid iusto quam, enim quos ab. Sunt veritatis accusamus reiciendis earum laboriosam at similique ad! Voluptatum, recusandae ex veniam molestias quam dignissimos soluta eligendi earum nam, sunt dolore voluptates. Debitis aspernatur suscipit totam amet!</div>
+    </div>
+</body></html>
