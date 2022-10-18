@@ -1,6 +1,18 @@
 @import "./reset.css";
+@import "./variable.css";
 @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
 
+* {
+    box-sizing: border-box; /*모든 요소를 화면 안에 포함시킴*/
+}
 body {
     font-family: 'Hi Melody', cursive;
+    background-color: var(--background-purple);
+    color: #fff;
 }
+input {
+    border: none;
+    outline: none;
+    appearance: none;
+}
+

@@ -6,6 +6,60 @@
     <!-- <link rel="stylesheet" href="./css/global.css"> -->
     <link rel="stylesheet" href="./css/login.css">
     <!-- 책에서는 땡기고 땡기는 구조를 만들기 위해 주석 처리한 내용처럼 만들어도 되지만 저렇게 작성함 -->
+<style>
+    .login-title {
+        text-align: center;
+    }
+    .login-title__maintext {
+        font-size: 2.5rem;
+        color: var(--purple);
+    }
+    .login-title__subtext {
+        font-size: 0.9rem;
+        font-weight: 100;
+    }
+    html,body {
+        overflow: hidden;
+    }
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem;
+    }
+    .login-form input {
+        padding: 15px 0;
+        margin: 0 10px;
+        border: none;
+        outline: none;
+        appearance: none;
+        background-color: var(--background-purple);
+        font-size: 1em;
+    }
+    .login-form input:not([type="submit"]) {
+        columns: #fff;
+        border-bottom: 1px solid var(--border);
+        transition: border-color 0.3s ease-in-out;
+
+    }
+    .login-form input:focus {
+        border-color: #fff;
+    }
+    .login-form input[type="submit"] {
+        color: white;
+        background-color: var(--darkpurple);
+        border-radius: 20px;
+        margin-top: 2rem;
+        transition: background-color 0.2s ease-in-out;
+    }
+    .login-form input[type="submit"]:active {
+        background-color: var(--purple);
+    }
+    img {
+        width: 100%;
+        height: 400px;
+    }
+    
+</style>
 </head>
 
 <body>

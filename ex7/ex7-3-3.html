@@ -22,10 +22,11 @@
             border-radius: 10px;
             display: flex;
             flex-direction: column;
+            box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
         }
 
         .banner {
-            background-image: url(img/banner.jfif);
+            background-image: url(../img/banner.jfif);
             display: flex;
             justify-content: center;
         }
@@ -33,10 +34,12 @@
         .profile {
             width: 80px;
             height: 80px;
-            background-image: url(img/mococo.png);
+            border-radius: 50%;
+            background-image: url(../img/mococo.png);
             background-size: 80px;
             transform: translateY(50%);
             transition: transform 1s ease;
+            box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
         }
 
         .profile:hover {
@@ -45,14 +48,14 @@
 
         .name {
             padding-top: 50px;
-            margin: 0px;
+            text-align: center;
         }
 
         .follow-btn {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-bottom: 10px;
+            padding: 20px;
         }
 
         button {
@@ -61,6 +64,7 @@
             border: none;
             border-radius: 10px;
             transition: transform 1s ease, background-color 2s ease;
+            padding: 3px;
         }
 
         button:hover {
@@ -69,7 +73,7 @@
         }
 
         .desc {
-            padding: 10px;
+            padding: 20px;
         }
     </style>
 </head>
