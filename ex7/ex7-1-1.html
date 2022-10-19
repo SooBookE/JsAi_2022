@@ -42,7 +42,7 @@
             position: absolute;
             width: 100%;
             height: 10px;
-            transition: 0.5x;
+            transition: 0.5s;
             background: white;
         }
         .hamburger:before,
@@ -51,6 +51,12 @@
         }
         .hamburger {
             top: 50%;
+        }
+        .hamburger:before{
+            top: -30px;
+        }
+        .hamburger:after{
+            top: 30px;
         }
     </style>
 </head>
